@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Container from "../../containers/Container/Container"
-import DefaultImage from "../../assets/images/DefaultImage.png"
 import Loading from "../../components/Loading/Loading"
 
 import "./UserPhoto.scss"

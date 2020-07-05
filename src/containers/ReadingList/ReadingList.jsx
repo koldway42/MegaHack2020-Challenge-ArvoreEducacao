@@ -26,15 +26,15 @@ export default () => {
 
     if(books.length) {
         readBooks = userReadingList.completed.map(completed => {
-            return books.find(book => book.Id == completed.bookId)
+            return books.find(book => parseInt(book.Id) === completed.bookId)
         })
 
         plannedBooks = userReadingList.plan_to_read.map(plan_to_read => {
-            return books.find(book => book.Id == plan_to_read.bookId)
+            return books.find(book => parseInt(book.Id) === plan_to_read.bookId)
         })
 
         droppedBooks = userReadingList.dropped.map(dropped => {
-            return books.find(book => book.Id == dropped.bookId)
+            return books.find(book => parseInt(book.Id) === dropped.bookId)
         })
 
     }

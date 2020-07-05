@@ -5,10 +5,9 @@ import './Login.scss';
 
 import { Redirect } from 'react-router-dom'
 
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { 
     setUserCallbackSuccess,
-    setAuthCallbackError
 } from '../../actions';
 
 import backgroundImageDesktop from '../../assets/images/login-background.jpg';
@@ -68,9 +67,9 @@ const Login = () => {
                 {!isLoading ? (
                     <React.Fragment>
                         <input onChange={handleLoginChange} value={userLogin} type="text" name="login" id="user-login" className="login__auth-text" placeholder="Insira seu Login"/>
-                        <a href="#" onClick={e => handleLogin(e)} class="login__auth-button">
+                        <button onClick={e => handleLogin(e)} class="login__auth-button">
                             Avançar
-                        </a>
+                        </button>
                     </React.Fragment>
                 ) : (<Loading />)
                 }

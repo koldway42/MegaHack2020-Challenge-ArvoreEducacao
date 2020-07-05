@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React from "react";
 import BurgerMenu from "react-burger-menu"
 import "./Sidebar.scss"
 import Logo from "../Logo/Logo"

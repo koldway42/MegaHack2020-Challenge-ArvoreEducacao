@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import UserPhoto from "../../components/UserPhoto/UserPhoto"
 import UserActivity from "../../components/UserActivity/UserActivity"
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 
 export default () => {
@@ -14,7 +14,7 @@ export default () => {
         if(user.status === "FAILED") {
             setIsLoggedIn(false);
         }
-    })
+    }, [user.status])
 
     useEffect(() => {
         fetch("https://5effee7bdfd1400016ae1603.mockapi.io/api/v1/Livros")

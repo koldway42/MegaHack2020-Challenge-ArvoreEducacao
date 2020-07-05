@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 import Container from "../../containers/Container/Container"
 import Livro from "../Livro/Livro"
@@ -12,7 +12,7 @@ export default ({ className, User, Books, FilterBooks }) => {
 
     if(UserCompletedReading.length) {
         CompletedReading = UserCompletedReading.map(completedBook => {
-            return Books.find(book => book.Id == completedBook.bookId)
+            return Books.find(book => parseInt(book.Id) === completedBook.bookId)
         })
     }
 

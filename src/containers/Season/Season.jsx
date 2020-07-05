@@ -2,23 +2,13 @@ import React, { useState, useEffect } from 'react';
 
 import Container from "../Container/Container"
 import Livro from "../../components/Livro/Livro"
-import { useDispatch, useSelector } from 'react-redux'
 
 import Loading from "../../components/Loading/Loading"
 import "./Season.scss"
 
 export default () => {
-
-    const { user } = useSelector(state => state);
-    const [ isLoggedIn, setIsLoggedIn ] = useState(true);
     const [ books, setBooks ] = useState([]);
     const [ events, setEvents] = useState([]);
-
-    useEffect(() => {
-        if(user.status === "FAILED") {
-            setIsLoggedIn(false);
-        }
-    })
 
     useEffect(() => {
         fetch("https://5effee7bdfd1400016ae1603.mockapi.io/api/v1/Livros")
@@ -37,12 +27,12 @@ export default () => {
 
     if(books.length && events.length) {
         actualEvent = events[0];
-        eventBook = books.find(book => book.Id == actualEvent.bookId)
+        eventBook = books.find(book => book.Id === actualEvent.bookId)
     }
 
     return (
         <Container className="col-12">
-            {actualEvent != undefined ? (
+            {actualEvent !== undefined ? (
                 <div className="boss">
                     <div className="boss__header">
                         <p>
