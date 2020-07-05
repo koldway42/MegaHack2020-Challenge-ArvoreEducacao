@@ -1,0 +1,26 @@
+.Content {
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    padding: 8%;
+
+    -webkit-box-shadow: 10px 16px 69px -34px rgba(0,0,0,1);
+    -moz-box-shadow: 10px 16px 69px -34px rgba(0,0,0,1);
+    box-shadow: 10px 16px 69px -34px rgba(0,0,0,1);
+    
+    & .ContentContainer {
+        border: 1px solid #eee;
+        border-radius: 4px;
+        padding: 5%;
+        display: flex;
+        overflow: hidden;
+        
+        flex-wrap: wrap;
+
+        background: #42948d;
+
+        -webkit-box-shadow: 10px 10px 84px -31px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 84px -31px rgba(0,0,0,0.75);
+        box-shadow: 10px 10px 84px -31px rgba(0,0,0,0.75);
+    }
+}
+  

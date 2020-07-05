@@ -1,0 +1,24 @@
+.ReadingList {
+    
+    & .ReadingList__Header {
+        padding: 5%;
+
+        & strong {
+            color: rgba(83, 189, 180, 1);
+        }
+
+        &.ReadingList__Header--dropped {
+            & strong {
+                color: #fc3503;
+            }
+        }
+        
+    }
+
+    & .ReadingList__Body {
+        display: flex;
+        flex-flow: row;
+
+        overflow: auto;
+    }
+}

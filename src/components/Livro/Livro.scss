@@ -1,0 +1,33 @@
+.Livro {
+    & .Livro__Banner{
+        
+    }
+
+    & .Livro__Banner img {
+        width: 100%;
+    }
+
+    & .Livro__Header {
+        border-bottom: 1px solid #eee;
+        padding: 2%;
+        text-align: center;
+        background: #fff;
+        text-overflow: ellipsis;
+
+        & p {
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            
+            & strong {
+                color: rgba(83, 189, 180, 1);
+                margin-bottom: 5px;
+            }
+    
+            & span {
+                color: #888;
+            }
+        }
+    }
+
+}

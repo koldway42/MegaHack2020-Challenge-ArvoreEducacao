@@ -1,0 +1,17 @@
+.Catalog {
+
+    .Catalog__Body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        & .Livro {
+            transition: 0.5s;
+
+            &:hover {
+                transform: scale(1.05);
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,70 @@
+.boss {
+    display: flex;
+    flex-flow: column;
+    
+    & .boss__body {
+        display: flex;
+        justify-content: center;
+
+
+        & .boss__body__banner {
+            transition: transform .2s;
+
+            &:hover {
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+        }
+    }
+
+    & .boss__header {
+        display: flex;
+        justify-content: center;
+
+        padding: 5%;
+
+        & p {
+            font-size: 1.4em;
+            & strong {
+                color: rgb(67, 208, 194);
+            }
+        }
+    }
+
+    & .boss__footer {
+        display: flex;
+        justify-content: center;
+
+        margin-top: 5%;
+
+        padding: 5%;
+
+        -webkit-box-shadow: 10px 10px 84px -31px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 84px -31px rgba(0,0,0,0.75);
+        box-shadow: 10px 10px 84px -31px rgba(0,0,0,0.75);
+
+        & p {
+            font-size: 1.4em;
+            & strong {
+                color: rgb(67, 208, 194);
+            }
+        }
+
+        & .boss_footer__bossLife {
+            height: 5%;
+            background-color: red;
+            width: 100%;
+            text-align: center;
+            color: #fff;
+            border: solid 10px #eee;
+            border-radius: 4px;
+            z-index: 0;
+
+            & .boss_footer__bossLife--elapsed {
+                background-color: green;
+                z-index: 1;
+            }
+            
+        }
+    }
+}

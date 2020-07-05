@@ -1,0 +1,59 @@
+.UserActivity {
+    display: flex;
+    flex-flow: column;
+    align-content: space-around;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    -webkit-box-shadow: 10px 10px 84px -31px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 84px -31px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 84px -31px rgba(0,0,0,0.75);
+
+    & .UserActivity__Header {
+        padding: 3%;
+
+        & p {
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            & strong {
+                color: rgba(83, 189, 180, 1);
+                margin-bottom: 5px;
+            }
+    
+            & span {
+                color: #888;
+            }
+        }
+    }
+
+    & .UserActivity__Body {
+        border-top: 1px solid #eee;
+        padding: 5%;
+        text-align: center;
+        background: #fff;
+        display: flex;
+
+        overflow: auto;
+
+        & .Livro {
+            transition: transform .2s;
+
+            &:hover {
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+        }
+        
+    }
+
+    
+
+    & .UserPhoto__Photo {
+        border-radius: 100%;
+        overflow: hidden;
+        width: 50%;
+    }
+    & .UserPhoto__Photo img {
+        width: 100%;
+    }
+}

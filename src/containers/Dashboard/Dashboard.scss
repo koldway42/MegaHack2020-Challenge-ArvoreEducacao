@@ -1,0 +1,11 @@
+.DashBoard {
+    background-repeat: no-repeat;
+    height: 100vh;
+    max-height: 100vh;
+
+    &div:first-of-type {
+        background-color: #333;
+    }
+
+  }
+  

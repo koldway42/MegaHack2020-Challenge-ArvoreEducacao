@@ -1,0 +1,130 @@
+.UserPhoto {
+    display: flex;
+    margin-bottom: 5px;
+    flex-flow: column;
+    align-content: space-around;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    -webkit-box-shadow: 10px 10px 84px -31px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 84px -31px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 84px -31px rgba(0,0,0,0.75);
+
+    & .UserPhoto__Body {
+        padding: 5%;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    & .UserPhoto__Footer {
+        border-top: 1px solid #eee;
+        padding: 5%;
+        text-align: center;
+        background: #fff;
+
+        & p {
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            & strong {
+                color: rgba(83, 189, 180, 1);
+                margin-bottom: 5px;
+            }
+    
+            & span {
+                color: #888;
+            }
+        }
+    }
+
+    
+
+    & .UserPhoto__Photo {
+        border-radius: 100%;
+        overflow: hidden;
+        width: 50%;
+    }
+    & .UserPhoto__Photo img {
+        width: 100%;
+    }
+}
+
+.userInfo {
+    display: flex;
+    flex-flow: column;
+    align-content: space-around;
+    border-radius: 4px;
+    background: #fff;
+    overflow: hidden;
+
+    & .userInfo__Header {
+        padding: 4%;
+        text-align: center;
+        color: rgba(83, 189, 180, 1);
+    }
+
+    & .userInfo__ReadingInfo {
+        display: flex;
+        justify-content: center;
+        color: #fff;
+        font-size: 0.8em;
+        
+        & .userInfo__ReadingInfo--completed {
+            padding: 4%;
+            background: rgb(3, 102, 252);
+
+            & p {
+                display: flex;
+                flex-flow: column;
+                text-align: center;
+
+                & span {
+                    margin-top: 20%;
+                    padding: 3%;
+                    background: #fff;
+                    color: rgb(3, 102, 252);
+                    border-radius: 4px;
+                }
+            }
+        }
+
+        & .userInfo__ReadingInfo--planned {
+            background: #8a8a8a;
+            padding: 4%;
+
+            & p {
+                display: flex;
+                flex-flow: column;
+                text-align: center;
+
+                & span {
+                    margin-top: 20%;
+                    padding: 3%;
+                    background: #fff;
+                    color: #8a8a8a;
+                    border-radius: 4px;
+                }
+            }
+        }
+
+        & .userInfo__ReadingInfo--dropped {
+            background: #fc3503;
+            padding: 4%;
+            
+            & p {
+                display: flex;
+                flex-flow: column;
+                text-align: center;
+
+                & span {
+                    margin-top: 20%;
+                    padding: 3%;
+                    background: #fff;
+                    color: #fc3503;
+                    border-radius: 4px;
+                }
+            }
+        }
+        
+    }
+}
