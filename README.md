@@ -21,3 +21,6 @@ Ferramentas Utilizadas
  Livros: https://5effee7bdfd1400016ae1603.mockapi.io/api/v1/Livros \
  Usuários: https://5effee7bdfd1400016ae1603.mockapi.io/api/v1/user \
  Eventos: https://5effee7bdfd1400016ae1603.mockapi.io/api/v1/evento \
+ 
+ 
+ Link em produção: https://kind-noyce-a7831f.netlify.app/
